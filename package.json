@@ -1,0 +1,40 @@
+{
+  "name": "designkit-messages",
+  "version": "0.0.1",
+  "description": "Sass module for css message blocks.",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/rightscale-design/designkit-messages.git"
+  },
+  "author": {
+    "name": "Jason Melgoza",
+    "email": "jason@rightscale.com"
+  },
+  "main": "css/designkit-messages.css",
+  "style": "css/designkit-messages.css",
+  "scss": "src/index.scss",
+  "files": [
+    "src",
+    "css"
+  ],
+  "keywords": [
+    "css",
+    "scss",
+    "Sass"
+  ],
+  "license": "MIT",
+  "homepage": "https://github.com/rightscale-design/designkit-messages#readme",
+  "devDependencies": {
+    "bourbon": "^4.2.6",
+    "designkit-colors": "0.0.8",
+    "http-server": "^0.8.5",
+    "node-sass": "^3.4.2",
+    "nodemon": "^1.8.1"
+  },
+  "scripts": {
+    "build-css": "./bin/build-css",
+    "build-min": "./bin/build-min",
+    "watch-css": "./bin/watch-css",
+    "serve": "./bin/http-server"
+  }
+}
