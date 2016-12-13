@@ -48,7 +48,9 @@ npm i designkit-messages
   cursor: hand;
   background-color: #FFF7E5;
   border-radius: 2px;
-  align-self: center;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
 }
 
 .message .message-icon path,
@@ -76,7 +78,6 @@ npm i designkit-messages
   border-bottom-left-radius: 0;
   opacity: 0;
   -webkit-transition: all 0.2s ease-in-out;
-  -moz-transition: all 0.2s ease-in-out;
   transition: all 0.2s ease-in-out;
 }
 
