@@ -1,0 +1,83 @@
+/*
+//
+// designkit-messages
+// --------------------------------------------------
+*/
+.message {
+  position: relative;
+  bottom: 3px;
+  display: inline-block;
+  height: 22px;
+  padding: 0 8px 0 25px;
+  margin-top: 4px;
+  margin-left: 4px;
+  overflow: hidden;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: 11px;
+  font-weight: bold;
+  line-height: 22px;
+  color: #89887a;
+  cursor: pointer;
+  cursor: hand;
+  background-color: #FFF7E5;
+  border-radius: 2px;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+}
+
+.message .message-icon path,
+.message .message-extend-icon path {
+  fill: currentColor;
+}
+
+.message .message-icon {
+  position: absolute;
+  top: 6px;
+  left: 8px;
+}
+
+.message .message-extend {
+  position: relative;
+  display: block;
+  float: right;
+  width: 0;
+  height: 22px;
+  margin: 0 -8px 0 8px;
+  white-space: nowrap;
+  background-color: #ffefcc;
+  border-radius: inherit;
+  border-top-left-radius: 0;
+  border-bottom-left-radius: 0;
+  opacity: 0;
+  -webkit-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+}
+
+.message .message-extend .message-extend-icon {
+  position: absolute;
+  top: 4px;
+  left: 5px;
+}
+
+.message:hover .message-extend {
+  width: 24px;
+  opacity: 1;
+}
+
+.message.message-dark {
+  position: relative;
+  color: #fff;
+  cursor: pointer;
+  cursor: hand;
+  background-color: #353B41;
+}
+
+.message.message-dark .message-icon path,
+.message.message-dark .message-extend-icon path {
+  fill: currentColor;
+}
+
+.message.message-dark .message-extend {
+  background-color: #57626C;
+}
