@@ -9,15 +9,14 @@
   margin-top: 4px;
   margin-left: 4px;
   overflow: hidden;
-  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-family: $helvetica;
   font-size: 11px;
   font-weight: bold;
   line-height: 22px;
   color: lighten($messaging-text, 12);
-  cursor: pointer;
-  cursor: hand;
   background-color: $messaging-background;
   border-radius: 2px;
+
   align-self: center;
   .message-icon,
   .message-extend-icon {
@@ -43,6 +42,7 @@
     border-top-left-radius: 0;
     border-bottom-left-radius: 0;
     opacity: 0;
+
     @include transition(all .2s ease-in-out);
     .message-extend-icon {
       position: absolute;
@@ -58,8 +58,6 @@
   &.message-dark {
     position: relative;
     color: #fff;
-    cursor: pointer;
-    cursor: hand;
     background-color: $left-background-dark;
     .message-icon,
     .message-extend-icon {
